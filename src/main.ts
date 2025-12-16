@@ -100,7 +100,7 @@ export type PlantDTO = {
 };
 
 // axios 回傳會是一個 Promise
-export const fetchPlants = async (): Promise<AxiosResponse<PlantDTO>> => {
+export const fetchPlants = async (): Promise<AxiosResponse<PlantDTO[]>> => {
   return axios.get("https://fakestoreapi.com/products");
 };
 
